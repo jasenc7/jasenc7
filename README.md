@@ -31,7 +31,7 @@ I spent over a decade being the person who asks "but what if it fails?" I want t
 Languages   TypeScript · Python · JavaScript · Go · SQL
 Frontend    React · Vite · Tailwind · shadcn/ui
 Backend     Node.js · Flask · FastAPI · Deno
-Database    PostgreSQL
+Database    PostgreSQL · MySQL · SQLite
 Tooling     Git · GitHub Actions · Docker · Railway · CI/CD
 AI          RAG · embeddings · ML pipelines · frontier model tooling
 ```
