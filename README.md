@@ -1,53 +1,69 @@
 # Jasen Carroll
 
-**Full stack developer. Philadelphia, PA.**
+**Engineer / applied scientist - Philadelphia, PA**
 
-Full stack developer with a decade of engineering experience in regulated software environments. Background spans UAT ownership, SDLC participation, Agile delivery, and AI/ML model validation at Philips under FDA consent decree. Now building full-time.
+I build and validate systems.
 
-I spent over a decade being the person who asks "but what if it fails?" I want to be the person building the thing that doesn't.
+My background is 12+ years in FDA-regulated device and pharma quality,
+validation, remediation, and software systems. My current work also spans
+developer tooling, classical ML, RAG/local AI, and full-stack systems.
+
+The through-line is the same: define the boundary, make the claim testable,
+execute it against reality, and preserve evidence of what happened.
+
+ASQ Certified Software Quality Engineer.
 
 ---
 
 ## Currently Shipping
 
-**[pyr](https://pyrun.dev)** — A Python project manager that bootstraps its own CPython runtime. One binary, six commands, no Python required to install. Built in TypeScript, compiled with Deno, cross-platform CI/CD.
+**[pyr](https://pyrun.dev)** - Python without the ceremony. A project manager
+that bootstraps its own CPython runtime: one binary, six commands, no system
+Python required to install. TypeScript + Deno, pip-delegated dependency
+resolution, cross-platform CI/CD.
 
 ---
 
-## Projects
+## Selected Work
 
-| Project | Stack | Live |
+| Project | What it is | Link |
 |---|---|---|
-| QMS Assistant | Flask · Mistral · Chroma · RAG | [qms.jasencarroll.com](https://qms.jasencarroll.com) |
-| Cafe Fausse | React · Flask · PostgreSQL · Railway | [cafe-fausse.jasencarroll.com](https://cafe-fausse.jasencarroll.com) |
-| Goodware | scikit-learn · XGBoost · PyTorch · Flask | [goodware.jasencarroll.com](https://goodware.jasencarroll.com) |
-| Recipe Recommender | React · FastAPI · K-means · Docker | [recipe-recommender.jasencarroll.com](https://recipe-recommender.jasencarroll.com) |
+| Milky | Night-sky forecast: scoring engine, PWA, live NOAA aurora data, no backend | [live app](https://jasencarroll.com/milky/) |
+| QMS Assistant | RAG assistant over a synthetic SaMD quality-system corpus | [qms.jasencarroll.com](https://qms.jasencarroll.com) |
+| Goodware | ML anomaly-detection toolkit trained and validated on 50,000+ labeled executable samples | [goodware.jasencarroll.com](https://goodware.jasencarroll.com) |
+| Cafe Fausse | React + Flask + PostgreSQL reservation platform with CI/CD | [cafe-fausse.jasencarroll.com](https://cafe-fausse.jasencarroll.com) |
+| Recipe Recommender | Full-stack K-means recommender over 41,932 recipes | [recipe-recommender.jasencarroll.com](https://recipe-recommender.jasencarroll.com/) |
+
+---
+
+## Public Repos
+
+- **[pyr](https://github.com/jasenc7/pyr)** - Python project/runtime manager
+- **[chat-responses-proxy](https://github.com/jasenc7/chat-responses-proxy)** - Deno compatibility proxy between Chat Completions-style clients and Responses-style APIs
+- **[ember](https://github.com/jasenc7/ember)** - visual/config system and small reusable tooling
 
 ---
 
 ## Stack
 
-```
-Languages   TypeScript · Python · JavaScript · Go · SQL
-Frontend    React · Vite · Tailwind · shadcn/ui
-Backend     Node.js · Flask · FastAPI · Deno
-Database    PostgreSQL · MySQL · SQLite
-Tooling     Git · GitHub Actions · Docker · Railway · CI/CD
-AI          RAG · embeddings · ML pipelines · frontier model tooling
-```
+`TypeScript` · `Python` · `JavaScript` · `Go` · `SQL`  
+`Deno` · `React` · `Preact` · `Flask` · `FastAPI`  
+`PostgreSQL` · `SQLite` · `Docker` · `GitHub Actions`  
+`RAG` · `embeddings` · `classical ML` · `AI engineering tooling`
 
 ---
 
 ## Background
 
-Polyglot developer — academically trained in Java and C++, bootcamped in Python and JS, formal study in JavaScript including Eloquent JavaScript, self-taught Ruby on Rails, TypeScript, Deno, and some Go.
+12+ years in FDA-regulated industries across medical device, pharma,
+combination products, warning-letter, consent-decree, remediation, validation,
+and software-system environments.
 
-12+ years in regulated industries — medical devices, pharma, FDA consent decrees. That experience shows up in how I think about correctness, boundaries, and what "done" means.
-
-BS Mechanical Engineering, Drexel · EMBA, Quantic · MSSE candidate 2026, Quantic
+B.S. Mechanical Engineering, Drexel · EMBA, Quantic ·
+M.S. Software Engineering, Quantic (2026) · ASQ CSQE
 
 ---
 
-## Find Me
-
-[jasencarroll.com](https://jasencarroll.com) · [pyrun.dev](https://pyrun.dev) · [linkedin.com/in/jasenc](https://linkedin.com/in/jasenc)
+[jasencarroll.com](https://jasencarroll.com) ·
+[pyrun.dev](https://pyrun.dev) ·
+[LinkedIn](https://linkedin.com/in/jasenc)
