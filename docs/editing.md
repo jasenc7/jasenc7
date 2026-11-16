@@ -51,7 +51,8 @@ is involved.
    is.
 3. Commit with a message naming the section, for example
    `docs: correct Selected Work entry for <project>`.
-4. Open a pull request into `main` with the change record in its description.
+4. Push the branch and open a pull request into `main` with the change record
+   in its description.
 5. Merge. The profile shows the new text as soon as `main` contains it.
 
 ## Retired projects and links
@@ -80,29 +81,53 @@ This repository and its issues and pull requests are public.
 Restore only what changed. Never reset the whole repository or force-push
 `main`; later, unrelated profile edits and the repository history must survive.
 
-1. Find the commit that made the change:
+1. Branch from `main`. Find the commit that made the change; its pull request
+   holds the change record with the exact old wording:
 
    ```bash
    git log -p -- README.md
    ```
 
-2. Undo it with one of the following, on a new branch from `main`:
-   - **Revert the commit** if it changed only the selected text. This keeps
-     every later edit:
+2. Put the old wording back in one of two ways:
+   - **Revert the commit** if it changed only the selected text. This creates
+     the commit for you:
 
      ```bash
      git revert <commit>
      ```
 
-   - **Restore individual hunks** if the commit touched more than the selected
-     text. Pick only the hunks to bring back:
+     If a later edit touched the same or adjacent lines, the revert stops with a
+     conflict. Run `git revert --abort` and restore by hand instead.
 
-     ```bash
-     git restore -p --source=<commit>^ README.md
-     ```
+   - **Restore by hand** in every other case. In `README.md`, replace the
+     replacement wording with the exact old wording from the change record and
+     change nothing else. `git restore -p --source=<commit>^ README.md` can do
+     this only when the selected change sits in a hunk of its own. When it
+     shares a hunk with a later edit, as adjacent table rows do, the hunk cannot
+     be split and accepting it also undoes the later edit, so edit the file
+     directly.
 
-3. Open a pull request with a change record whose replacement wording is the
-   restored text and whose reason is the rollback, then merge it as above.
+3. Review the result. The diff must show only the selected text returning to
+   its old wording, with every later edit still in place:
+
+   ```bash
+   git diff main -- README.md
+   ```
+
+4. If you restored by hand, commit the change:
+
+   ```bash
+   git add README.md
+   git commit -m "docs: restore <section> wording"
+   ```
+
+5. Push the branch and open a pull request whose change record has the
+   restored text as its replacement wording and the rollback as its reason,
+   then merge it as above:
+
+   ```bash
+   git push -u origin <branch>
+   ```
 
 The same steps apply to this document: restore `docs/editing.md` alone,
 without touching `README.md`.
